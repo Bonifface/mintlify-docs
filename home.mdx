@@ -1,0 +1,67 @@
+---
+title: "home"
+---
+
+```
+# What is Lantstool?
+
+**Lantstool** — non-custodial open-source web application for developers, created for interaction with NEAR Protocol blockchain. It allows creating, sending, and saving transactions and calls (RPC-calls), managing accounts and keys, and provides set of useful utilities to facilitate work.
+
+<Image src="/lantstoolLogoHome.png" alt="Lantstool Logo" className={cn.image} />
+
+
+## Key features and advantages
+
+Lantstool created to simplify your interaction with NEAR Protocol, replacing **CLI** routine with convenient and clear web interface.
+
+Our goal — **optimize development and testing process** for everyone: from beginners just getting acquainted with blockchain to experienced engineers seeking to save time.
+Lantstool removes need to write large amount of repetitive code and manually find and enter private data every time.
+
+Lantstool visualizes every action, turning code into understandable logical scheme. This allows practically understanding how interaction with blockchain is built, seeing every argument and parameter before you.
+
+### Structure and security
+
+- **Space structure:**
+Space — isolated environment for organizing various projects. Each space can contain set of different networks where data (keys, transactions, etc.) is isolated at network level.
+This allows working with both testnet for testing and mainnet within one space, switching quickly between them.
+
+- **Non-custodial:**
+Your private keys, accounts, transactions, calls, and settings are stored exclusively in local SQLite database of your browser. Lantstool has no server side for data collection — only direct interaction with blockchain.
+
+### Networks and presets
+
+- **Connecting networks:**
+You are not limited to standard list of networks. Lantstool allows connecting to any environment (mainnet, testnet, or localnet) using your own public RPC or private nodes with authorization headers configuration.
+
+- **Presets:**
+For quick start, we prepared available presets for mainnet and testnet networks, where lists of verified RPCs are pre-configured, allowing to start work instantly.
+
+### Accounts and keys
+Imported keys and accounts are stored **in your chosen network**. This allows instantly selecting required account and key from list in all relevant fields, avoiding constant manual data copying.
+
+### Transactions and calls
+
+- **Form-constructor:**
+Form-constructor allows creating and editing complex multi-action transactions (up to 100 actions), providing full control over every parameter before sending.
+Built-in validation minimizes error risks, and ability to reuse saved transactions significantly speeds up your work in any network.
+
+- **Templates and portability:**
+Export and import function allows easily sharing transactions and calls with team.
+Also powerfull tool for learning: you can import ready examples from documentation (e.g., interaction with DAO or DEX) to visually analyze structure of complex transactions and understand their operation logic.
+
+- **Smart contracts and ABI:**
+For smart contracts supporting ABI, system implements automatic argument template substitution.
+This significantly saves time, eliminating need to manually search for parameter names and types in contract code.
+
+### Useful utilities
+* **Key Generator:** Creating new key pairs.
+* **Unit Converter:** Quick conversion between NEAR/yoctoNEAR and other coins.
+* **Account Cleaner:** Tool for cleaning or deleting account with large storage volume.
+
+## ➡️ What's next?
+
+- [**Getting Started**](/getting-started): Step-by-step instruction: from space creation to sending transaction.
+- [**Transactions**](/transactions): Learn how to create complex multi-action transactions.
+- [**Calls**](/calls): RPC-calls description.
+- [**Utils**](/utils): Overview of useful Lantstool utilities.
+```
